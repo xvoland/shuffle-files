@@ -4,10 +4,12 @@ builds:
       - darwin
       - linux
       - windows
+      - freebsd
     goarch:
-      - amd64
-      - arm64
       - 386
+      - amd64
+      - arm
+      - arm64
     env:
       - CGO_ENABLED = 0
     flags:
@@ -21,11 +23,12 @@ universal_binaries:
 
 brews:
   -
-    name: shuffle-files
-    homepage: https://dotoca.net/shuffle-files
+    name: homebrew-tap
+    folder: Formula
+    homepage: https://dotoca.net/shuffle-files/
     description: "This is a CLI tool which shuffles the files in the directory"
-    tap:
-      owner: shuffle-files
+    repository:
+      owner: xvoland
       name: shuffle-files
     commit_author:
       name: Vitalii Tereshchuk
