@@ -4,10 +4,12 @@ builds:
       - darwin
       - linux
       - windows
+      - freebsd
     goarch:
-      - amd64
-      - arm64
       - 386
+      - amd64
+      - arm
+      - arm64
     env:
       - CGO_ENABLED = 0
     flags:
@@ -21,8 +23,9 @@ universal_binaries:
 
 brews:
   -
-    name: shuffle-files
-    homepage: https://github.com/xvoland/shuffle-files/
+    name: homebrew-tap
+    folder: Formula
+    homepage: https://dotoca.net/shuffle-files/
     description: "This is a CLI tool which shuffles the files in the directory"
     repository:
       owner: xvoland
