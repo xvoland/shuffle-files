@@ -21,7 +21,7 @@ universal_binaries:
 
 brews:
   -
-    name: xvoland
+    name: shuffle-files
     homepage: https://github.com/xvoland/shuffle-files/
     description: "This is a CLI tool which shuffles the files in the directory"
     repository:
