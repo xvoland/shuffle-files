@@ -24,7 +24,7 @@ brews:
     name: shuffle-files
     homepage: https://dotoca.net/shuffle-files
     description: "This is a CLI tool which shuffles the files in the directory"
-    tap:
+    repository:
       owner: shuffle-files
       name: shuffle-files
     commit_author:
