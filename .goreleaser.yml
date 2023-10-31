@@ -22,11 +22,11 @@ universal_binaries:
 brews:
   -
     name: xvoland
-    homepage: https://dotoca.net/shuffle-files
+    homepage: https://github.com/xvoland/shuffle-files/
     description: "This is a CLI tool which shuffles the files in the directory"
     repository:
-      owner: shuffle-files
-      name: shuffle-files
+      owner: xvoland
+      name: homebrew-shuffle-files
     commit_author:
       name: Vitalii Tereshchuk
       email: xvoland@dotoca.net
