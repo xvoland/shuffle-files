@@ -21,7 +21,7 @@ universal_binaries:
 
 brews:
   -
-    name: shuffle-files
+    name: xvoland
     homepage: https://dotoca.net/shuffle-files
     description: "This is a CLI tool which shuffles the files in the directory"
     repository:
