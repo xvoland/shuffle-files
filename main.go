@@ -95,7 +95,7 @@ func shuffleFileNames(fileList []os.FileInfo) []string {
 
 func printUsage() {
     fmt.Println("Shuffle the contents of files, keeping their names in the same order.\n")
-    fmt.Println("Usage: shuffle_files <directory>")
+    fmt.Println("Usage: shuffle-files <directory>")
     fmt.Println("Options:")
     fmt.Println("  <directory string> - Path to the directory containing files to shuffle")
 }
