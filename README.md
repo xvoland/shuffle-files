@@ -1,8 +1,17 @@
 # SHUFFLE-FILES
 This is a CLI tool which shuffles the files in the directory, their content, but without changing the file names
+<br />
 
+
+### What OS do we support?
+- macOS (Darwin, ARM)
+- Windows (386, ARM, AMD)
+- Linux
+- FreeBSD
 <br />
 <br />
+
+
 
 ## Install
 
