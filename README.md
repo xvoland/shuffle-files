@@ -22,7 +22,7 @@ brew install xvoland/shuffle-files
 
 ### 🐙 GitHub Releases
 
-Alternatively, binaries are available in the [GitHub Releases](https://github.com/xvoland/homebrew-shuffle-files/releases). Or you can visit the [home page][homepage]
+Alternatively, binaries are available in the [GitHub Releases][githubreleases]. Or you can visit the [home page][homepage]
 
 <br />
 <br />
@@ -88,6 +88,7 @@ It helps cover stuff like domain hosting and the hours I put into coding, which 
 
 [home]: http://dotoca.net
 [homepage]: https://dotoca.net/shuffle-files
+[githubreleases]: https://github.com/xvoland/shuffle-files/releases
 [paypal]: https://paypal.me/xvoland
 [youtube]: https://youtube.com/xvoland
 [instagram]: https://www.instagram.com/xvoland/
