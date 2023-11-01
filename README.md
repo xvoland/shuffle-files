@@ -2,16 +2,7 @@
 This is a CLI tool which shuffles the files in the directory, their content, but without changing the file names
 
 <br />
-
-
-### What OS do we support?
-- macOS (Darwin, ARM)
-- Windows (386, ARM, AMD)
-- Linux
-- FreeBSD
-
 <br />
-
 
 ## Install
 
@@ -58,12 +49,17 @@ shuffle-files ./some_path_to_files --test
 shuffle-files ./some_path_to_files --test --debug
 ```
 
+```bash
+shuffle-files --help
+```
+
 <br />
 <br />
 
 # ⚠️ Donation
 
-No matter if I get the money or not, I'm gonna keep making the app better 'cause I love seeing folks use it and reach their goals. And you know what? Every $1 really makes a difference for folks like me.
+No matter if I get the money or not, I'm gonna keep making the app better 'cause I love seeing folks use it and reach their goals.<br />
+And you know what? Every $1 really makes a difference for folks like me.<br />
 It helps cover stuff like domain hosting and the hours I put into coding, which would be super awesome and free up some more family time. Thanks a bunch!
 
 [Donate here for my projects][paypal]
