@@ -5,37 +5,37 @@
 class HomebrewTap < Formula
   desc "This is a CLI tool which shuffles the files in the directory"
   homepage "https://dotoca.net/shuffle-files/"
-  version "0.1.6"
+  version "0.1.9"
 
   on_macos do
-    url "https://github.com/xvoland/shuffle-files/releases/download/v0.1.6/shuffle-files_0.1.6_darwin_all.tar.gz"
-    sha256 "9527d51fda4af3daeb8015b97c59013cbf5c51ab1fc39f0a54f60c77c210f0ab"
+    url "https://github.com/xvoland/homebrew-shuffle-files/releases/download/v0.1.9/homebrew-shuffle-files_0.1.9_darwin_all.tar.gz"
+    sha256 "0850a0a3874a7a4f8a68b96076f6d81d09a296395f33c9160ec0f0ab4a087fae"
 
     def install
-      bin.install "shuffle-files"
+      bin.install "homebrew-shuffle-files"
     end
   end
 
   on_linux do
-    if Hardware::CPU.arm? && !Hardware::CPU.is_64_bit?
-      url "https://github.com/xvoland/shuffle-files/releases/download/v0.1.6/shuffle-files_0.1.6_linux_armv6.tar.gz"
-      sha256 "bc7988f4341c7bda34bcd60734cb1e3cfa9b0a4defa39805faf7f39a6280a620"
-
-      def install
-        bin.install "shuffle-files"
-      end
-    end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/xvoland/shuffle-files/releases/download/v0.1.6/shuffle-files_0.1.6_linux_arm64.tar.gz"
-      sha256 "6d70ec3d658066a9b5f551a65daf6b13e8fbff5309015b599df5a4a7eebd5887"
+      url "https://github.com/xvoland/homebrew-shuffle-files/releases/download/v0.1.9/homebrew-shuffle-files_0.1.9_linux_arm64.tar.gz"
+      sha256 "a40665aac9c850f5fefdda228aee4f9af366c2fe936252bbd04331127600eccb"
 
       def install
         bin.install "shuffle-files"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/xvoland/shuffle-files/releases/download/v0.1.6/shuffle-files_0.1.6_linux_amd64.tar.gz"
-      sha256 "a3dd36ec074cb7bdee66eb223eaf7347652b1a83fda329a0ec10badcba60931a"
+      url "https://github.com/xvoland/homebrew-shuffle-files/releases/download/v0.1.9/homebrew-shuffle-files_0.1.9_linux_amd64.tar.gz"
+      sha256 "22869469353cbc5d75966c013c09b84f92324a25f2071aeab38dcdd32f82b1f5"
+
+      def install
+        bin.install "shuffle-files"
+      end
+    end
+    if Hardware::CPU.arm? && !Hardware::CPU.is_64_bit?
+      url "https://github.com/xvoland/homebrew-shuffle-files/releases/download/v0.1.9/homebrew-shuffle-files_0.1.9_linux_armv6.tar.gz"
+      sha256 "6dfa508fac2465e9fa9b64e7ce312c5f4b046c350ea5c272b865f51ee3d29ab6"
 
       def install
         bin.install "shuffle-files"
