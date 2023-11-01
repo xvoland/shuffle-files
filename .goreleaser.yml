@@ -23,7 +23,7 @@ universal_binaries:
 
 brews:
   -
-    name: homebrew-tap
+    name: shuffle-files
     folder: Formula
     homepage: https://dotoca.net/shuffle-files/
     description: "This is a CLI tool which shuffles the files in the directory"
