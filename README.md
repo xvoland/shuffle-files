@@ -1,5 +1,7 @@
 # SHUFFLE-FILES
 This is a CLI tool which shuffles the files in the directory, their content, but without changing the file names
+
+<br />
 <br />
 
 
@@ -8,9 +10,9 @@ This is a CLI tool which shuffles the files in the directory, their content, but
 - Windows (386, ARM, AMD)
 - Linux
 - FreeBSD
-<br />
-<br />
 
+<br />
+<br />
 
 
 ## Install
