@@ -54,7 +54,9 @@ shuffle-files ./some_path_to_files --test --debug
 
 # ⚠️ Donation
 
-No matter if I get the funds or not, I'm gonna keep tweaking the script 'cause it makes me happy to see folks using it and reaching their goals. But hey, if you could lend a hand with covering the domain hosting and the time I'm pouring into coding, that'd be super awesome and help me keep my family time intact. Thanks a bunch!
+No matter if I get the money or not, I'm gonna keep making the app better 'cause I love seeing folks use it and reach their goals.
+And you know what? Every $1 really makes a difference for folks like me.
+It helps cover stuff like domain hosting and the hours I put into coding, which would be super awesome and free up some more family time. Thanks a bunch!
 
 [Donate here for my projects][paypal]
 
