@@ -28,7 +28,7 @@ import (
 	"github.com/spf13/cobra"
 )
 
-var version = "0.1.11"
+var version = "0.1.13"
 var outputPath string
 var debug = false
 var test = false
