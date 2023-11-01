@@ -23,7 +23,7 @@ brew install shuffle-files
 Alternatively, binaries are available in the [GitHub Releases](https://github.com/xvoland/homebrew-shuffle-files/releases). Or you can visit the [home page][homepage]
 
 
-# How it use
+# ℹ️ How it use
 
 ```bash
 shuffle-files ./some_path_to_files
@@ -47,7 +47,7 @@ shuffle-files ./some_path_to_files --test --debug
 
 
 
-# Donation
+# ⚠️ Donation
 
 No matter if I get the funds or not, I'm gonna keep tweaking the script 'cause it makes me happy to see folks using it and reaching their goals. But hey, if you could lend a hand with covering the domain hosting and the time I'm pouring into coding, that'd be super awesome and help me keep my family time intact. Thanks a bunch!
 
@@ -57,7 +57,7 @@ No matter if I get the funds or not, I'm gonna keep tweaking the script 'cause i
 
 
 
-# Connect with me:
+# ☎️ Connect with me:
 
 ### Social
 [<img align="left" alt="xVoLAnD" width="50px" src="https://raw.githubusercontent.com/iconic/open-iconic/master/svg/globe.svg" />][home]
@@ -66,7 +66,7 @@ No matter if I get the funds or not, I'm gonna keep tweaking the script 'cause i
 
 
 
-## License
+## ⛔ License
 
 &copy; 2023, [Vitalii Tereshchuk][home] via Apache2.0 license.
 
