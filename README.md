@@ -7,42 +7,41 @@ This is a CLI tool which shuffles the files in the directory, their content, but
 
 ### 🍺 Homebrew.  Let’s try it!
 
-```
+```bash
 brew tap xvoland/shuffle-files
 
 brew install shuffle-files
 ```
 or
-```
+```bash
 brew install shuffle-files
 ```
 
 
 ### 🐙 GitHub Releases
 
-Alternatively, binaries are available in the [GitHub Releases](https://github.com/xvoland/homebrew-shuffle-files/releases).
-Or you can visit the [home page][homepage]
+Alternatively, binaries are available in the [GitHub Releases](https://github.com/xvoland/homebrew-shuffle-files/releases). Or you can visit the [home page][homepage]
 
 
 # How it use
 
-```
+```bash
 shuffle-files ./some_path_to_files
 ```
 
-```
+```bash
 shuffle-files ./some_path_to_files -o /output_path
 ```
 
-```
+```bash
 shuffle-files ./some_path_to_files --debug
 ```
 
-```
+```bash
 shuffle-files ./some_path_to_files --test
 ```
 
-```
+```bash
 shuffle-files ./some_path_to_files --test --debug
 ```
 
