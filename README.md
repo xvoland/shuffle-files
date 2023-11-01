@@ -2,7 +2,6 @@
 This is a CLI tool which shuffles the files in the directory, their content, but without changing the file names
 
 <br />
-<br />
 
 
 ### What OS do we support?
@@ -11,7 +10,6 @@ This is a CLI tool which shuffles the files in the directory, their content, but
 - Linux
 - FreeBSD
 
-<br />
 <br />
 
 
