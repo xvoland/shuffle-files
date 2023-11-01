@@ -15,7 +15,7 @@ brew install shuffle-files
 ```
 or
 ```bash
-brew install xvoland/shuffle-files/homebrew-tap
+brew install xvoland/shuffle-files
 ```
 
 <br />

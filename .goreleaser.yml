@@ -29,7 +29,7 @@ brews:
     description: "This is a CLI tool which shuffles the files in the directory"
     repository:
       owner: xvoland
-      name: homebrew-shuffle-files
+      name: shuffle-files
     commit_author:
       name: Vitalii Tereshchuk
       email: xvoland@dotoca.net
