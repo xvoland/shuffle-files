@@ -50,7 +50,7 @@ shuffle-files ./some_path_to_files --test --debug
 
 # Donation
 
-Regardless of whether funding is obtained or not, I will persist in refining the script's capabilities because it brings me joy to witness people using it and achieving their goals. However, I would be grateful for any support you could offer in offsetting the costs of hosting the domain and the time spent programming, which would otherwise encroach on my precious family time.
+No matter if I get the funds or not, I'm gonna keep tweaking the script 'cause it makes me happy to see folks using it and reaching their goals. But hey, if you could lend a hand with covering the domain hosting and the time I'm pouring into coding, that'd be super awesome and help me keep my family time intact. Thanks a bunch!
 
 [Donate here for my projects][paypal]
 
