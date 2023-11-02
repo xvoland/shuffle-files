@@ -1,9 +1,7 @@
 # SHUFFLE-FILES
 This is a CLI tool which shuffles the files in the directory, their content, but without changing the file names
-
 <p align="right"><img align="center" src="https://raw.githubusercontent.com/xvoland/xvoland/main/images/qr_shuffle-files.png" alt="DOTOCA Ltd." height="50" width="50" /></a>
 </p>
-
 ## Install
 
 ### 🍺 Homebrew.  Let’s try it!
