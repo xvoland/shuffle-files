@@ -8,8 +8,6 @@ This is a CLI tool which shuffles the files in the directory, their content, but
 
 ### 🍺 Homebrew.  Let’s try it!
 
-In the first place star this repo 😉
-
 ```bash
 brew tap xvoland/shuffle-files
 
@@ -31,29 +29,57 @@ Alternatively, binaries are available in the [GitHub Releases][githubreleases]. 
 
 # ℹ️ How it use
 
+#### Path
 ```bash
 shuffle-files ./some_path_to_files
 ```
+Shuffles the files in the specified path `./some_path_to_files`
+For example, the directory contains:
+	- file1 (content1)
+	- file2 (content2)
+	- file3 (content3)
 
+After running the `shuffle_file`, now has content like this:
+	- file1 (content2)
+	- file2 (content1)
+	- file3 (content3)
+
+#### -o (output)
 ```bash
 shuffle-files ./some_path_to_files -o /output_path
 ```
+Shuffles the files in the specified path `./some_path_to_files` and copy output result to `/output_path`
 
+#### --debug
 ```bash
 shuffle-files ./some_path_to_files --debug
 ```
+Shuffles the files in the specified path `./some_path_to_files` and display the result of the program on the screen
 
+#### --test
 ```bash
 shuffle-files ./some_path_to_files --test
 ```
+Shuffles the files in the specified path `./some_path_to_files` and do nothing with the files
 
+#### Combination of flags
 ```bash
 shuffle-files ./some_path_to_files --test --debug
 ```
+You have the ability to combine keys.
+For example, shuffles the files in the specified path `./some_path_to_files` and do nothing with the files, and display the result of the program on the screen
 
+#### --help
 ```bash
 shuffle-files --help
 ```
+Show help on the screen
+
+#### --version
+```bash
+shuffle-files --version
+```
+Show program version
 
 <br />
 <br />
