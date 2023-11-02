@@ -8,6 +8,8 @@ This is a CLI tool which shuffles the files in the directory, their content, but
 
 ### 🍺 Homebrew.  Let’s try it!
 
+In the first place star this repo 😉
+
 ```bash
 brew tap xvoland/shuffle-files
 
