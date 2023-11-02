@@ -33,6 +33,7 @@ Alternatively, binaries are available in the [GitHub Releases][githubreleases]. 
 ```bash
 shuffle-files ./some_path_to_files
 ```
+
 Shuffles the files in the specified path `./some_path_to_files`
 For example, the directory contains:
 	- file1 (content1)
@@ -50,7 +51,8 @@ After running the `shuffle_file`, now has content like this:
 ```bash
 shuffle-files ./some_path_to_files -o /output_path
 ```
-Shuffles the files in the specified path `./some_path_to_files` and copy output result to `/output_path`
+
+*Shuffles the files in the specified path `./some_path_to_files` and copy output result to `/output_path`*
 
 
 
@@ -58,7 +60,8 @@ Shuffles the files in the specified path `./some_path_to_files` and copy output 
 ```bash
 shuffle-files ./some_path_to_files --debug
 ```
-Shuffles the files in the specified path `./some_path_to_files` and display the result of the program on the screen
+
+*Shuffles the files in the specified path `./some_path_to_files` and display the result of the program on the screen*
 
 
 
@@ -66,7 +69,8 @@ Shuffles the files in the specified path `./some_path_to_files` and display the 
 ```bash
 shuffle-files ./some_path_to_files --test
 ```
-Shuffles the files in the specified path `./some_path_to_files` and do nothing with the files
+
+*Shuffles the files in the specified path `./some_path_to_files` and do nothing with the files*
 
 
 
@@ -74,8 +78,9 @@ Shuffles the files in the specified path `./some_path_to_files` and do nothing w
 ```bash
 shuffle-files ./some_path_to_files --test --debug
 ```
-You have the ability to combine keys.
-For example, shuffles the files in the specified path `./some_path_to_files` and do nothing with the files, and display the result of the program on the screen
+
+*You have the ability to combine keys.
+For example, shuffles the files in the specified path `./some_path_to_files` and do nothing with the files, and display the result of the program on the screen*
 
 
 
@@ -83,7 +88,8 @@ For example, shuffles the files in the specified path `./some_path_to_files` and
 ```bash
 shuffle-files --help
 ```
-Show help on the screen
+
+*Show help on the screen*
 
 
 
@@ -91,7 +97,8 @@ Show help on the screen
 ```bash
 shuffle-files --version
 ```
-Show program version
+
+*Show program version*
 
 <br />
 <br />
