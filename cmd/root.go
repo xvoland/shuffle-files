@@ -23,6 +23,7 @@ import (
     "fmt"
     "io/ioutil"
     "math/rand"
+    "strings"
     "path/filepath"
     "time"
 
@@ -107,6 +108,9 @@ func mainApp(cmd *cobra.Command, args []string) {
         return
     }
 
+    fileList = cleanFilesList(fileList)
+
+
     // Seed the random number generator
     rand.Seed(time.Now().Unix())
 
@@ -168,6 +172,30 @@ func mainApp(cmd *cobra.Command, args []string) {
 }
 
 
+// Filtering for hidden files (starting with a dot) and directories
+func cleanFilesList(fileList []os.FileInfo) []os.FileInfo {
+    var filteredFiles []os.FileInfo
+
+    for _, file := range fileList {
+        // Check if it's a directory
+        if file.IsDir() {
+            continue
+        }
+
+        // Check if it's a hidden file (starts with a dot)
+        if strings.HasPrefix(file.Name(), ".") {
+            continue
+        }
+
+        // Append the file info to the 'filteredFiles' slice
+        filteredFiles = append(filteredFiles, file)
+    }
+
+    return filteredFiles
+}
+
+
+
 // Shuffle filenames array
 func shuffleFileNames(fileList []os.FileInfo) []string {
     names := make([]string, len(fileList))
@@ -184,7 +212,7 @@ func shuffleFileNames(fileList []os.FileInfo) []string {
 }
 
 
-
+// Copy file function
 func copyFile(sourcePath, destinationPath string) error {
     // Open the source file for reading
     sourceFile, err := os.Open(sourcePath)
