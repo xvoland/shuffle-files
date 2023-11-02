@@ -5,11 +5,11 @@
 class ShuffleFiles < Formula
   desc "This is a CLI tool which shuffles the files in the directory"
   homepage "https://dotoca.net/shuffle-files/"
-  version "0.1.13"
+  version "0.2.0"
 
   on_macos do
-    url "https://github.com/xvoland/shuffle-files/releases/download/v0.1.13/shuffle-files_0.1.13_darwin_all.tar.gz"
-    sha256 "ddd9a6fe4b77c686f3432314671c28df255f01e777ab6e1d12b427c011bb9143"
+    url "https://github.com/xvoland/shuffle-files/releases/download/v0.2.0/shuffle-files_0.2.0_darwin_all.tar.gz"
+    sha256 "d070673ca874f4d8192474182812cbb4a37e8dd3036b398967cde6580f9482d0"
 
     def install
       bin.install "shuffle-files"
@@ -18,24 +18,24 @@ class ShuffleFiles < Formula
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/xvoland/shuffle-files/releases/download/v0.1.13/shuffle-files_0.1.13_linux_amd64.tar.gz"
-      sha256 "e30ff2d0777d8bc8de1e7bf02f01156ce2933ce465ae3ffae50ebc3bbe52b330"
-
-      def install
-        bin.install "shuffle-files"
-      end
-    end
-    if Hardware::CPU.arm? && !Hardware::CPU.is_64_bit?
-      url "https://github.com/xvoland/shuffle-files/releases/download/v0.1.13/shuffle-files_0.1.13_linux_armv6.tar.gz"
-      sha256 "701155b0d94080717872e784b9db95f33b8fcb4defc86c473ca3b2526e3011ec"
+      url "https://github.com/xvoland/shuffle-files/releases/download/v0.2.0/shuffle-files_0.2.0_linux_amd64.tar.gz"
+      sha256 "4655d8e1820925278ae0962d4074ab06bfdb02fbbcbbf8c982d8041f849dcf53"
 
       def install
         bin.install "shuffle-files"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/xvoland/shuffle-files/releases/download/v0.1.13/shuffle-files_0.1.13_linux_arm64.tar.gz"
-      sha256 "e4d47e7616577f40fa949e9802b640ad4c5342f4decca12884e2bbed3dbcb491"
+      url "https://github.com/xvoland/shuffle-files/releases/download/v0.2.0/shuffle-files_0.2.0_linux_arm64.tar.gz"
+      sha256 "c329ae3542d830a35d99eb62283be5301417baa906da97614a4761aedb28307b"
+
+      def install
+        bin.install "shuffle-files"
+      end
+    end
+    if Hardware::CPU.arm? && !Hardware::CPU.is_64_bit?
+      url "https://github.com/xvoland/shuffle-files/releases/download/v0.2.0/shuffle-files_0.2.0_linux_armv6.tar.gz"
+      sha256 "4c6cc1218375bbdff329ebf8cd7d5a0035cf3833d9a704036ac6d23687f8c98b"
 
       def install
         bin.install "shuffle-files"
