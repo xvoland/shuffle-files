@@ -19,6 +19,7 @@ package cmd
 
 import (
 	"os"
+    "io"
     "fmt"
     "io/ioutil"
     "math/rand"
@@ -86,14 +87,16 @@ func mainApp(cmd *cobra.Command, args []string) {
         os.Exit(1)
     }
 
+
     dir     := args[0]   // input path
     dir_out := ""        // output path
 
+
     // Get the directory path from the command-line argument if there's
-    if outputPath == "" {
-        dir_out = dir
-    } else {
+    if cmd.Flags().Changed("output") {
         dir_out = outputPath
+    } else {
+        dir_out = dir
     }
 
 
@@ -116,13 +119,27 @@ func mainApp(cmd *cobra.Command, args []string) {
         newName := shuffledFileNames[i]
         newPath := filepath.Join(dir, newName)
 
-        if debug {
-            fmt.Printf("%s -> %s \n", oldPath, newPath + ".tmp")
+
+        // output of debug log
+        if cmd.Flags().Changed("output") {
+            if cmd.Flags().Changed("debug") {
+                fmt.Printf("(copy) %s -> %s \n", oldPath, newPath + ".tmp")
+            }
+        } else {
+            if cmd.Flags().Changed("debug") {
+                fmt.Printf("%s -> %s \n", oldPath, newPath + ".tmp")
+            }
         }
 
-        if !test {
-           if err := os.Rename(oldPath, newPath + ".tmp"); err != nil {
-                fmt.Printf("Error renaming %s to %s: %v\n", oldPath, newPath, err)
+        if !cmd.Flags().Changed("test") {
+            if cmd.Flags().Changed("output") {
+                // flag --output is set
+                copyFile(oldPath, newPath + ".tmp")
+
+            } else {
+               if err := os.Rename(oldPath, newPath + ".tmp"); err != nil {
+                    fmt.Printf("Error renaming %s to %s: %v\n", oldPath, newPath, err)
+                }
             }
         }
     }
@@ -130,16 +147,18 @@ func mainApp(cmd *cobra.Command, args []string) {
     for i := range shuffledFileNames {
         oldPath := filepath.Join(dir, shuffledFileNames[i])
         newName := shuffledFileNames[i]
-        //newPath := filepath.Join(dir, newName)
 
         newPath := filepath.Join(dir_out, newName)
 
-        if debug {
+
+        // output of debug log
+        if cmd.Flags().Changed("debug") {
             fmt.Printf("%s -> %s \n", oldPath + ".tmp", newPath)
         }
 
-        if !test {
-            if err := os.Rename(newPath + ".tmp", newPath); err != nil {
+        // start rename
+        if !cmd.Flags().Changed("test") {
+            if err := os.Rename(oldPath + ".tmp", newPath); err != nil {
                 fmt.Printf("Error renaming %s to %s: %v\n", newPath + ".tmp", newPath, err)
             }
         }
@@ -162,5 +181,37 @@ func shuffleFileNames(fileList []os.FileInfo) []string {
         names[i], names[j] = names[j], names[i]
     }
     return names
+}
+
+
+
+func copyFile(sourcePath, destinationPath string) error {
+    // Open the source file for reading
+    sourceFile, err := os.Open(sourcePath)
+    if err != nil {
+        return err
+    }
+    defer sourceFile.Close()
+
+    // Create or open the destination file for writing
+    destinationFile, err := os.Create(destinationPath)
+    if err != nil {
+        return err
+    }
+    defer destinationFile.Close()
+
+    // Copy the contents from the source file to the destination file
+    _, err = io.Copy(destinationFile, sourceFile)
+    if err != nil {
+        return err
+    }
+
+    // Flush the destination file to ensure data is written
+    err = destinationFile.Sync()
+    if err != nil {
+        return err
+    }
+
+    return nil
 }
 
