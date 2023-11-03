@@ -1,7 +1,7 @@
 # SHUFFLE-FILES
 This is a CLI tool which shuffles the files in the directory, their content, but without changing the file names.
 
-*NOTE: If the path contains subdirectories, this has no effect on them. Also, the program ignores all files that begin with a dot "."*
+*NOTE: If the path contains subdirectories, this has no effect on them. Also, the application ignores all files that begin with a dot "."*
 
 <p align="right"><img align="center" src="https://raw.githubusercontent.com/xvoland/xvoland/main/images/qr_shuffle-files.png" alt="DOTOCA Ltd." height="50" width="50" /></a>
 </p>
@@ -36,13 +36,15 @@ Alternatively, binaries are available in the [GitHub Releases][githubreleases]. 
 shuffle-files ./some_path_to_files
 ```
 
-Shuffles the files in the specified path `./some_path_to_files`
-For example, the directory contains:
+*Shuffles the files in the specified path `./some_path_to_files`*
+*For example, the directory contains:*
+
 	- file1 (content1)
 	- file2 (content2)
 	- file3 (content3)
 
-After running the `shuffle_file`, now has content like this:
+*After running the `shuffle_file`, now has content like this:*
+
 	- file1 (content2)
 	- file2 (content1)
 	- file3 (content3)
