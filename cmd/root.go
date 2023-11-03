@@ -30,7 +30,7 @@ import (
 	"github.com/spf13/cobra"
 )
 
-var version = "0.2.0"
+var version = "0.2.1"
 var outputPath string
 var debug = false
 var test = false
@@ -135,15 +135,20 @@ func mainApp(cmd *cobra.Command, args []string) {
             }
         }
 
-        if !cmd.Flags().Changed("test") {
-            if cmd.Flags().Changed("output") {
-                // flag --output is set
-                copyFile(oldPath, newPath + ".tmp")
 
-            } else {
-               if err := os.Rename(oldPath, newPath + ".tmp"); err != nil {
-                    fmt.Printf("Error renaming %s to %s: %v\n", oldPath, newPath, err)
-                }
+        // skip if it in test mode
+        if cmd.Flags().Changed("test") {
+            continue
+        }
+
+
+        if cmd.Flags().Changed("output") {
+            // flag --output is set
+            copyFile(oldPath, newPath + ".tmp")
+
+        } else {
+           if err := os.Rename(oldPath, newPath + ".tmp"); err != nil {
+                fmt.Printf("Error renaming %s to %s: %v\n", oldPath, newPath, err)
             }
         }
     }
@@ -160,11 +165,15 @@ func mainApp(cmd *cobra.Command, args []string) {
             fmt.Printf("%s -> %s \n", oldPath + ".tmp", newPath)
         }
 
+        // skip if it in test mode
+        if cmd.Flags().Changed("test") {
+            continue
+        }
+
+
         // start rename
-        if !cmd.Flags().Changed("test") {
-            if err := os.Rename(oldPath + ".tmp", newPath); err != nil {
-                fmt.Printf("Error renaming %s to %s: %v\n", newPath + ".tmp", newPath, err)
-            }
+        if err := os.Rename(oldPath + ".tmp", newPath); err != nil {
+            fmt.Printf("Error renaming %s to %s: %v\n", newPath + ".tmp", newPath, err)
         }
     }
 
