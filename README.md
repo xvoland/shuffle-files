@@ -36,13 +36,15 @@ Alternatively, binaries are available in the [GitHub Releases][githubreleases]. 
 shuffle-files ./some_path_to_files
 ```
 
-Shuffles the files in the specified path `./some_path_to_files`
-For example, the directory contains:
+*Shuffles the files in the specified path `./some_path_to_files`*
+*For example, the directory contains:*
+
 	- file1 (content1)
 	- file2 (content2)
 	- file3 (content3)
 
-After running the `shuffle_file`, now has content like this:
+*After running the `shuffle_file`, now has content like this:*
+
 	- file1 (content2)
 	- file2 (content1)
 	- file3 (content3)
