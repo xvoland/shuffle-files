@@ -18,16 +18,15 @@
 package cmd
 
 import (
-	"os"
+    "os"
     "io"
     "fmt"
-    "io/ioutil"
     "math/rand"
     "strings"
     "path/filepath"
     "time"
 
-	"github.com/spf13/cobra"
+    "github.com/spf13/cobra"
 )
 
 var version = "0.2.1"
@@ -38,11 +37,11 @@ var test = false
 
 // rootCmd represents the base command when called without any subcommands
 var rootCmd = &cobra.Command{
-	Use:   "shuffle-files <path_to_files>",
+    Use:   "shuffle-files <path_to_files>",
     Version: version,
     Args: cobra.MatchAll(cobra.ExactArgs(1), cobra.OnlyValidArgs),
-	Short: "This is a CLI tool which shuffles the files in the directory",
-	Long: `Copyright © 2023, Vitalii Tereshchuk | DOTOCA.NET All rights reserved | https://dotoca.net/shuffle-files
+    Short: "This is a CLI tool which shuffles the files in the directory",
+    Long: `Copyright © 2023, Vitalii Tereshchuk | DOTOCA.NET All rights reserved | https://dotoca.net/shuffle-files
 
 This is a CLI tool which shuffles the files in the directory, their content, but without changing the file names.
 
@@ -55,27 +54,27 @@ Example: shuffle-files ./some_path_to_files
 // Execute adds all child commands to the root command and sets flags appropriately.
 // This is called by main.main(). It only needs to happen once to the rootCmd.
 func Execute() {
-	err := rootCmd.Execute()
-	if err != nil {
-		os.Exit(1)
-	}
+    err := rootCmd.Execute()
+    if err != nil {
+        os.Exit(1)
+    }
 }
 
 func init() {
-	// Here you will define your flags and configuration settings.
-	// Cobra supports persistent flags, which, if defined here,
-	// will be global for your application.
+    // Here you will define your flags and configuration settings.
+    // Cobra supports persistent flags, which, if defined here,
+    // will be global for your application.
 
-	// rootCmd.PersistentFlags().StringVar(&cfgFile, "config", "", "config file (default is $HOME/.shuffle-files.yaml)")
+    // rootCmd.PersistentFlags().StringVar(&cfgFile, "config", "", "config file (default is $HOME/.shuffle-files.yaml)")
 
     rootCmd.Flags().StringVarP(&outputPath, "output", "o", "", "Output directory for files")
 
     rootCmd.PersistentFlags().BoolVar(&debug, "debug", false, "set log level to debug")
     rootCmd.PersistentFlags().BoolVar(&test, "test", false, "nothing will be done")
 
-	// Cobra also supports local flags, which will only run
-	// when this action is called directly.
-	//rootCmd.Flags().BoolP("toggle", "t", false, "Help message for toggle")
+    // Cobra also supports local flags, which will only run
+    // when this action is called directly.
+    //rootCmd.Flags().BoolP("toggle", "t", false, "Help message for toggle")
 }
 
 
@@ -101,8 +100,9 @@ func mainApp(cmd *cobra.Command, args []string) {
     }
 
 
+
     // List all files in the specified directory
-    fileList, err := ioutil.ReadDir(dir)
+    fileList, err := readDirSafe(dir)
     if err != nil {
         fmt.Println("Error:", err)
         return
@@ -179,6 +179,32 @@ func mainApp(cmd *cobra.Command, args []string) {
 
     fmt.Printf("Shuffled %d file(s)\n", len(shuffledFileNames))
 }
+
+
+
+func readDirSafe(dir string) ([]os.FileInfo, error) {
+    // Convert the directory path to an absolute path
+    absDir, err := filepath.Abs(dir)
+    if err != nil {
+        return nil, err
+    }
+
+    // Open the directory using os.Open
+    dirFile, err := os.Open(absDir)
+    if err != nil {
+        return nil, err
+    }
+    defer dirFile.Close()
+
+    // Read the directory entries
+    fileList, err := dirFile.Readdir(0)
+    if err != nil {
+        return nil, err
+    }
+
+    return fileList, nil
+}
+
 
 
 // Filtering for hidden files (starting with a dot) and directories
