@@ -33,6 +33,8 @@ brews:
     commit_author:
       name: Vitalii Tereshchuk
       email: xvoland@dotoca.net
+    license: "Apache 2.0"
+    commit_msg_template: "Brew formula update for {{ .ProjectName }} version {{ .Tag }}"
 
 checksum:
   name_template: 'checksums.txt'
