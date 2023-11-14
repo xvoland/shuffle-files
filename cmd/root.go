@@ -18,12 +18,12 @@
 package cmd
 
 import (
-	"os"
-	"io"
 	"fmt"
+	"io"
 	"math/rand"
-	"strings"
+	"os"
 	"path/filepath"
+	"strings"
 	"time"
 
 	"github.com/spf13/cobra"
@@ -34,13 +34,12 @@ var outputPath string
 var debug = false
 var test = false
 
-
 // rootCmd represents the base command when called without any subcommands
 var rootCmd = &cobra.Command{
-	Use:   "shuffle-files <path_to_files>",
+	Use:     "shuffle-files <path_to_files>",
 	Version: version,
-	Args: cobra.MatchAll(cobra.ExactArgs(1), cobra.OnlyValidArgs),
-	Short: "This is a CLI tool which shuffles the files in the directory",
+	Args:    cobra.MatchAll(cobra.ExactArgs(1), cobra.OnlyValidArgs),
+	Short:   "This is a CLI tool which shuffles the files in the directory",
 	Long: `Copyright © 2023, Vitalii Tereshchuk | DOTOCA.NET All rights reserved | https://dotoca.net/shuffle-files
 
 This is a CLI tool which shuffles the files in the directory, their content, but without changing the file names.
@@ -49,7 +48,6 @@ Example: shuffle-files ./some_path_to_files
 `,
 	Run: mainApp,
 }
-
 
 // Execute adds all child commands to the root command and sets flags appropriately.
 // This is called by main.main(). It only needs to happen once to the rootCmd.
@@ -77,9 +75,6 @@ func init() {
 	//rootCmd.Flags().BoolP("toggle", "t", false, "Help message for toggle")
 }
 
-
-
-
 func mainApp(cmd *cobra.Command, args []string) {
 	// Check for the correct number of command-line arguments
 	if len(args) < 1 {
@@ -87,10 +82,8 @@ func mainApp(cmd *cobra.Command, args []string) {
 		os.Exit(1)
 	}
 
-
-	dir     := args[0]   // input path
-	dir_out := ""        // output path
-
+	dir := args[0] // input path
+	dir_out := ""  // output path
 
 	// Get the directory path from the command-line argument if there's
 	if cmd.Flags().Changed("output") {
@@ -98,8 +91,6 @@ func mainApp(cmd *cobra.Command, args []string) {
 	} else {
 		dir_out = dir
 	}
-
-
 
 	// List all files in the specified directory
 	fileList, err := readDirSafe(dir)
@@ -109,7 +100,6 @@ func mainApp(cmd *cobra.Command, args []string) {
 	}
 
 	fileList = cleanFilesList(fileList)
-
 
 	// Seed the random number generator
 	rand.Seed(time.Now().Unix())
@@ -123,31 +113,28 @@ func mainApp(cmd *cobra.Command, args []string) {
 		newName := shuffledFileNames[i]
 		newPath := filepath.Join(dir, newName)
 
-
 		// output of debug log
 		if cmd.Flags().Changed("output") {
 			if cmd.Flags().Changed("debug") {
-				fmt.Printf("(copy) %s -> %s \n", oldPath, newPath + ".tmp")
+				fmt.Printf("(copy) %s -> %s \n", oldPath, newPath+".tmp")
 			}
 		} else {
 			if cmd.Flags().Changed("debug") {
-				fmt.Printf("%s -> %s \n", oldPath, newPath + ".tmp")
+				fmt.Printf("%s -> %s \n", oldPath, newPath+".tmp")
 			}
 		}
-
 
 		// skip if it in test mode
 		if cmd.Flags().Changed("test") {
 			continue
 		}
 
-
 		if cmd.Flags().Changed("output") {
 			// flag --output is set
-			copyFile(oldPath, newPath + ".tmp")
+			copyFile(oldPath, newPath+".tmp")
 
 		} else {
-		   if err := os.Rename(oldPath, newPath + ".tmp"); err != nil {
+			if err := os.Rename(oldPath, newPath+".tmp"); err != nil {
 				fmt.Printf("Error renaming %s to %s: %v\n", oldPath, newPath, err)
 			}
 		}
@@ -159,10 +146,9 @@ func mainApp(cmd *cobra.Command, args []string) {
 
 		newPath := filepath.Join(dir_out, newName)
 
-
 		// output of debug log
 		if cmd.Flags().Changed("debug") {
-			fmt.Printf("%s -> %s \n", oldPath + ".tmp", newPath)
+			fmt.Printf("%s -> %s \n", oldPath+".tmp", newPath)
 		}
 
 		// skip if it in test mode
@@ -170,17 +156,14 @@ func mainApp(cmd *cobra.Command, args []string) {
 			continue
 		}
 
-
 		// start rename
-		if err := os.Rename(oldPath + ".tmp", newPath); err != nil {
-			fmt.Printf("Error renaming %s to %s: %v\n", newPath + ".tmp", newPath, err)
+		if err := os.Rename(oldPath+".tmp", newPath); err != nil {
+			fmt.Printf("Error renaming %s to %s: %v\n", newPath+".tmp", newPath, err)
 		}
 	}
 
 	fmt.Printf("Shuffled %d file(s)\n", len(shuffledFileNames))
 }
-
-
 
 func readDirSafe(dir string) ([]os.FileInfo, error) {
 	// Convert the directory path to an absolute path
@@ -205,8 +188,6 @@ func readDirSafe(dir string) ([]os.FileInfo, error) {
 	return fileList, nil
 }
 
-
-
 // Filtering for hidden files (starting with a dot) and directories
 func cleanFilesList(fileList []os.FileInfo) []os.FileInfo {
 	var filteredFiles []os.FileInfo
@@ -229,8 +210,6 @@ func cleanFilesList(fileList []os.FileInfo) []os.FileInfo {
 	return filteredFiles
 }
 
-
-
 // Shuffle filenames array
 func shuffleFileNames(fileList []os.FileInfo) []string {
 	names := make([]string, len(fileList))
@@ -245,7 +224,6 @@ func shuffleFileNames(fileList []os.FileInfo) []string {
 	}
 	return names
 }
-
 
 // Copy file function
 func copyFile(sourcePath, destinationPath string) error {
@@ -277,4 +255,3 @@ func copyFile(sourcePath, destinationPath string) error {
 
 	return nil
 }
-
