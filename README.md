@@ -113,6 +113,14 @@ No matter if I get the money or not, I'm gonna keep making the app better 'cause
 And you know what? Every $1 really makes a difference for folks like me.<br />
 It helps cover stuff like domain hosting and the hours I put into coding, which would be super awesome and free up some more family time. Thanks a bunch!
 
+### Crypto
+
+**BTC (ERC20):** 0x17496b75d241d377334717f8cbc16cc1a5b80396<br />
+**USDT (TRC20):** TAAsGXjNoQRJ7ewxSBL2W3DUCoG7h8LCT6
+
+
+### Other
+
 [Donate here for my projects][paypal]
 
 <a href='https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=9D4YBRWH8QURU'><img alt='Click here to lend your support to my projects and make a donation!' src='https://www.paypalobjects.com/en_US/GB/i/btn/btn_donateCC_LG.gif' border='0' /></a>
