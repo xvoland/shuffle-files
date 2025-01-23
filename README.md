@@ -22,6 +22,8 @@ brew install xvoland/shuffle-files
 
 <br />
 
+
+
 ### 🐙 GitHub Releases
 
 Alternatively, binaries are available in the [GitHub Releases][githubreleases]. Or you can visit the [home page][homepage]
