@@ -111,9 +111,7 @@ shuffle-files --version
 
 # ⚠️ Donation
 
-No matter if I get the money or not, I'm gonna keep making the app better 'cause I love seeing folks use it and reach their goals.<br />
-And you know what? Every $1 really makes a difference for folks like me.<br />
-It helps cover stuff like domain hosting and the hours I put into coding, which would be super awesome and free up some more family time. Thanks a bunch!
+Whether I receive the money or not, I’ll keep improving the app because I genuinely love seeing people use it to achieve their goals. Every single dollar truly makes a difference for creators like me. It helps cover things like domain hosting and the countless hours I spend coding. Your support would mean the world to me and even give me a bit more time to spend with my family. Thank you so much!
 
 ### Crypto
 
