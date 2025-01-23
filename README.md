@@ -141,7 +141,7 @@ It helps cover stuff like domain hosting and the hours I put into coding, which 
 <br />
 <br />
 
-# 📺 My Latest YouTube Videos
+# 📺 My Latest YouTube Videos:
 <!-- YOUTUBE:START -->
 <!-- YOUTUBE:END -->
 
