@@ -121,11 +121,10 @@ Whether I receive the money or not, I’ll keep improving the app because I genu
 
 ### Other
 
-[Donate here for my projects][paypal]
+<p align="center">
+  <a href="https://paypal.me/xvoland" target="blank"><img align="center" src="https://raw.githubusercontent.com/xvoland/xvoland/main/images/paypal.png" alt="PayPal" width="250" /></a>
+</p>
 
-<a href='https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=9D4YBRWH8QURU'><img alt='Click here to lend your support to my projects and make a donation!' src='https://www.paypalobjects.com/en_US/GB/i/btn/btn_donateCC_LG.gif' border='0' /></a>
-
-<br />
 <br />
 
 
