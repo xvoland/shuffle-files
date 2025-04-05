@@ -140,11 +140,11 @@ Whether I receive the money or not, I’ll keep improving the app because I genu
 
 # 📺 My Latest YouTube Videos:
 <!-- YOUTUBE:START -->
+- [Smartest Way to Remove Personal Info from Labels &lpar;You’re Doing It Wrong!&rpar;](https://www.youtube.com/watch?v=-f4xhf9h-pI)
 - [🎹🎵 Так, Малий, Твій Цілунок Странний - Загартована | Yes, Baby, Your Kiss Is Strange - Zagartovana](https://www.youtube.com/watch?v=jUdwbYpCHVg)
 - [🎹🎵 Не тримай. Загартована. | Don&#39;t hold. Ukrainian music](https://www.youtube.com/watch?v=EkWYhwkdXF0)
 - [🎹🎵 Там я і є. Загартована. | That&#39;s where I am](https://www.youtube.com/watch?v=SqSHvk0i04A)
 - [🎹🎵  MUSIC: Так, я люблю то... | Yes, I love that... Альбом: Загартована.](https://www.youtube.com/watch?v=N8qaaXJx9Ik)
-- [Так, я люблю то... – україномовна пісня-балада про пристрасть та тінь #music #ukrainemusic #ukraine](https://www.youtube.com/watch?v=5y3ZoEiTkIs)
 <!-- YOUTUBE:END -->
 
 ➡️ [more videos...][youtube]
