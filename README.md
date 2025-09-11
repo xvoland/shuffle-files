@@ -140,11 +140,11 @@ Whether I receive the money or not, I’ll keep improving the app because I genu
 
 # 📺 My Latest YouTube Videos:
 <!-- YOUTUBE:START -->
+- [Nano Banana Inside Photoshop In Action #photoshop #photoshoptutorial](https://www.youtube.com/shorts/--_NBrmJSgw)
 - [FREE To Use Nano Banana Inside Photoshop without external routers | Free script for Adobe Photoshop](https://www.youtube.com/watch?v=AKmHvOxEfbE)
 - [Best Way to Clean Earwax and Dirt from Headphones | Easy &amp; Effective Method](https://www.youtube.com/watch?v=ZCT0MrleRWA)
 - [💡 NASA ISS in 3D Anaglyph | Watch the International Space Station in 3D &lpar;Red-Cyan Glasses&rpar;](https://www.youtube.com/watch?v=WQ1CXDRmBp0)
 - [💰 UAH 10 Hryvnia Coin 2023 | Air Defense – Ukraine  | What is the current price?](https://www.youtube.com/watch?v=qozdkb5Yc-Y)
-- [💰 UAH 10 Hryvnia Coin 2023 – Joint Forces Command of Ukraine | 10 Hryvnia Collector’s Coin](https://www.youtube.com/watch?v=6Xwbtm35xoI)
 <!-- YOUTUBE:END -->
 
 ➡️ [more videos...][youtube]
