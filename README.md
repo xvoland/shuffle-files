@@ -140,11 +140,11 @@ Whether I receive the money or not, I’ll keep improving the app because I genu
 
 # 📺 My Latest YouTube Videos:
 <!-- YOUTUBE:START -->
+- [Photoshop + AI Nano Banan Magic Inside](https://www.youtube.com/shorts/Gu8ZggP2YHs)
 - [Photoshop + AI Nano Banana Multilingual &lpar;Review&rpar; — AI Script for Photoshop JSX](https://www.youtube.com/watch?v=-X14GiX0q7w)
 - [AI Nano Banana in 2008 Photoshop CS4? Google Gemini on Windows XP](https://www.youtube.com/watch?v=Zl5N0CG1uw8)
 - [Iron Wire Repair Tutorial | Step-by-Step Guide for Strong Fixes](https://www.youtube.com/watch?v=ypyjhJ4gYG8)
 - [Nano Banana Inside Photoshop In Action #photoshop #photoshoptutorial](https://www.youtube.com/shorts/--_NBrmJSgw)
-- [FREE To Use Nano Banana Inside Photoshop without external routers | Free script for Adobe Photoshop](https://www.youtube.com/watch?v=AKmHvOxEfbE)
 <!-- YOUTUBE:END -->
 
 ➡️ [more videos...][youtube]
