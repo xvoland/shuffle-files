@@ -140,11 +140,11 @@ Whether I receive the money or not, I’ll keep improving the app because I genu
 
 # 📺 My Latest YouTube Videos:
 <!-- YOUTUBE:START -->
-- [🔥 Artemis II Live Mission Map &lpar;Orion&rpar; | Day 7 #nasa  #artemis  #artemismission](https://www.youtube.com/watch?v=lndQ4OZvH94)
-- [🔥 Artemis II Live Mission Map &lpar;Orion&rpar; | Day 9- #nasa  #artemis  #artemismission](https://www.youtube.com/watch?v=6mf7c470LrM)
+- [🔥 Artemis II Live Mission Map &lpar;Orion&rpar; | Day 10 &lpar;SPLASHDOWN&rpar; #nasa  #artemis  #artemismission](https://www.youtube.com/watch?v=6mf7c470LrM)
+- [🔥 Artemis II Live Mission Map &lpar;Orion&rpar; | Day 9- #nasa  #artemis  #artemismission](https://www.youtube.com/watch?v=zfefckzTXhk)
+- [🔥 Artemis II Live Mission Map &lpar;Orion&rpar; | Day 9 #nasa  #artemis  #artemismission](https://www.youtube.com/watch?v=lndQ4OZvH94)
 - [🔥 Artemis II Live Mission Map &lpar;Orion&rpar; | Day 7-8 #nasa  #artemis  #artemismission](https://www.youtube.com/watch?v=nUDs7_73Ozk)
 - [🔥 Artemis II Live Mission Map &lpar;Orion&rpar; | Day 7-8 #nasa  #artemis  #artemismission](https://www.youtube.com/watch?v=ZV5zYq2RFyA)
-- [🔥 Artemis II Live Mission Map &lpar;Orion&rpar; | Day 7 #nasa  #artemis  #artemismission](https://www.youtube.com/watch?v=JMqvsG7BYXE)
 <!-- YOUTUBE:END -->
 
 ➡️ [more videos...][youtube]
