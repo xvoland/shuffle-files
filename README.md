@@ -140,11 +140,11 @@ Whether I receive the money or not, I’ll keep improving the app because I genu
 
 # 📺 My Latest YouTube Videos:
 <!-- YOUTUBE:START -->
-- [🔥 Artemis II Live Mission Map &lpar;Orion&rpar; | Day 10 &lpar;SPLASHDOWN&rpar; #nasa  #artemis  #artemismission](https://www.youtube.com/watch?v=6mf7c470LrM)
 - [🔥 Artemis II Live Mission Map &lpar;Orion&rpar; | Day 9- #nasa  #artemis  #artemismission](https://www.youtube.com/watch?v=zfefckzTXhk)
-- [🔥 Artemis II Live Mission Map &lpar;Orion&rpar; | Day 9 #nasa  #artemis  #artemismission](https://www.youtube.com/watch?v=lndQ4OZvH94)
-- [🔥 Artemis II Live Mission Map &lpar;Orion&rpar; | Day 7-8 #nasa  #artemis  #artemismission](https://www.youtube.com/watch?v=nUDs7_73Ozk)
-- [🔥 Artemis II Live Mission Map &lpar;Orion&rpar; | Day 7-8 #nasa  #artemis  #artemismission](https://www.youtube.com/watch?v=ZV5zYq2RFyA)
+- [OptiGrid – Optical Illusion Pattern Generator](https://www.youtube.com/shorts/uJ_X90zbwUQ)
+- [Gemini 3.1 Nano Banana 2 - AI Photoshop Plugin jsxNanaBananaPro v0.6.4](https://www.youtube.com/watch?v=GtspFSN7VlI)
+- [How To Change The Thumbnail for Shorts using the YouTube app for iOS #youtube #techtips #tutorial](https://www.youtube.com/shorts/_1UBbKtWUT4)
+- [🍌 Photoshop Plugin for Gemini 3 Pro Nano Banana #photoshop #photoshoptutorial](https://www.youtube.com/shorts/lIJcYdDSH5M)
 <!-- YOUTUBE:END -->
 
 ➡️ [more videos...][youtube]
