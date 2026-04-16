@@ -140,11 +140,11 @@ Whether I receive the money or not, I’ll keep improving the app because I genu
 
 # 📺 My Latest YouTube Videos:
 <!-- YOUTUBE:START -->
+- [24/7 Relaxing Christmas Music and Cozy Christmas Crackling Fireplace Vibes! ASMR Камин](https://www.youtube.com/watch?v=pILtdVmNIa4)
 - [⚡ Simple DIY Repair Old Bike Battery And Install Separate USB Charging Port For Any Device](https://www.youtube.com/watch?v=dNi7ayBp2nk)
 - [🔴 WWDC App&#39;s Wall Screensaver | Apple Store Apps Wall  #live #screensaver4k #relax](https://www.youtube.com/watch?v=tZ3UaYibMso)
 - [🔴 WWDC App&#39;s Wall Screensaver | Apple Store Apps Wall  #live #screensaver4k #relax](https://www.youtube.com/watch?v=VD72dMbiTks)
 - [OptiGrid – Optical Illusion Pattern Generator](https://www.youtube.com/shorts/uJ_X90zbwUQ)
-- [Gemini 3.1 Nano Banana 2 - AI Photoshop Plugin jsxNanaBananaPro v0.6.4](https://www.youtube.com/watch?v=GtspFSN7VlI)
 <!-- YOUTUBE:END -->
 
 ➡️ [more videos...][youtube]
