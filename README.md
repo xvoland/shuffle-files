@@ -140,7 +140,7 @@ Whether I receive the money or not, I’ll keep improving the app because I genu
 
 # 📺 My Latest YouTube Videos:
 <!-- YOUTUBE:START -->
-- [JSX Plugin v0.6.9 Nano Banana 2 Pro Gemini - jsxNanaBanana Plugin for Adobe Photoshop Plugin](https://www.youtube.com/watch?v=rher71lpwcw)
+- [JSX Plugin v0.6.9 Nano Banana 2 Pro Gemini 3.1 - jsxNanaBanana Plugin for Adobe Photoshop](https://www.youtube.com/watch?v=rher71lpwcw)
 - [​                                            𝓍𝑽𝕠𝑳𝑨𝔫𝔇](https://www.youtube.com/watch?v=HhTHIrUPJcc)
 - [⚡ Simple DIY Repair Old Bike Battery And Install Separate USB Charging Port For Any Device](https://www.youtube.com/watch?v=dNi7ayBp2nk)
 - [🔴 WWDC App&#39;s Wall Screensaver | Apple Store Apps Wall  #live #screensaver4k #relax](https://www.youtube.com/watch?v=tZ3UaYibMso)
