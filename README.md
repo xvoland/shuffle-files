@@ -140,11 +140,11 @@ Whether I receive the money or not, I’ll keep improving the app because I genu
 
 # 📺 My Latest YouTube Videos:
 <!-- YOUTUBE:START -->
+- [What the Most Secret and Powerful Organizations in the World?](https://www.youtube.com/watch?v=x5BWEIFBXGs)
 - [This $1 Cleaning Trick. How to Clean Your Philips Sonicare 7100 Toothbrush | Kill 99% of Bacteria](https://www.youtube.com/watch?v=ZG9nB1pD0YA)
 - [🚨 Your iPhone calculator may shock you… #apple #applebug  #ios #macos](https://www.youtube.com/shorts/HqEsy1bxxho)
 - [ The iPhone and macOS calculator are mind blowing](https://www.youtube.com/watch?v=oYfudyXcawI)
 - [99% of People Don’t Know This Shower Gel Hack](https://www.youtube.com/watch?v=aWfExS_jswA)
-- [JSX Plugin v0.6.9 Nano Banana 2 Pro Gemini 3.1 - jsxNanaBanana Plugin for Adobe Photoshop](https://www.youtube.com/watch?v=rher71lpwcw)
 <!-- YOUTUBE:END -->
 
 ➡️ [more videos...][youtube]
